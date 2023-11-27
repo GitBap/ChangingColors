@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!-- Changing the background color for each device
+[aquamarine] Mobile Devices: 319px — 480px
+[red] iPads and Tablets: 481px — 1200px
+[pink] Laptops: 1201px — 1600px
+[green] Desktops: 1601px and more
+-->
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1"
+    />
+    <title>Media Query</title>
+    <style>
+      body {
+        background-color: aquamarine;
+      }
+
+      @media (max-width: 319px) and (max-width: 480px) {
+        body {
+          background-color: red;
+        }
+      }
+
+      @media (min-width: 481px) and (max-width: 1200px) {
+        body {
+          background-color: pink;
+        }
+      }
+
+      @media (min-width: 1601px) {
+        body {
+          background-color: green;
+        }
+      }
+    </style>
+  </head>
+
+  <body></body>
+</html>
